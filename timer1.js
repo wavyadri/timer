@@ -15,7 +15,7 @@ const timer = () => {
       continue;
     }
     setTimeout(() => {
-      process.stdout.write('\07');
+      process.stdout.write('\x07');
     }, args[i] * 1000);
   }
 
